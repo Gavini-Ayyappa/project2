@@ -1,43 +1,772 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+
+    <style>
+      
+      .navbar{ position:fixed;
+        width:100vw;
+           top:0px;
+           margin-bottom: 30px;
+      }
+      .para{
+        margin: top 120px;
+      }
+      .ca{
+        background-color:violet ;
+      }
+      .creative{
+        margin:10px;
+        padding:10px;
+        height: 100vh;
+        width: 100%;
+        display: inline-block;
+      }
+      .agency{
+          height:350vh ;
+          width: 40%;
+          display: inline-block;
+          padding:110px;
+          margin:20px;
+          color:red;
+      }
+      .image {
+        display: inline-block;
+        height:80vh;
+        width: 40%;
+        padding:0px;
+          margin:50px;
+          background-color: orange;
+          margin-top: 100pxpx;
+        }
+      /* .image :hover{
+        color: black;
+      } */
+      .elements{
+        height: 150vh;
+        width: 100%;
+        background-color:blue ;
+      }
+      .service{
+        height: 50px;
+        width: 100%;
+        color: white;
+        margin: 60PX;
+        padding: 80PX;
+      }
+      .main{
+        height:80px ;
+        width: 30%;
+        display: inline-block;
+        padding: 50px;
+        margin: 80x;
+        color: white;
+       }
+       .pics{
+        height:1000px;
+        width: 90%;
+       }
+       .imag{
+        height:300px ;
+        width: 30%;
+        display: inline-block;
+        padding: 100px
+        margin: 80px;
+        color: white;
+       }
+       .blak{
+        height: 1000px;
+        width: 100%;
+        background-color: black;
+       }
+       .but{
+        height: 30px;
+        width: 100px;
+        color: white;
+        background-color:red;
+        border: 2px solid red;
+        display:flex;
+        align-items: center;
+       }
+      .achievements{
+        height: 20px;
+        width: 100%;
+        color:gree;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-top: 40px;
+      }
+      .proud{
+        height: 20px;
+        width: 100%;
+        color:gree;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+      .credits{
+        height: 40px;
+        width: 15%;
+        display: inline-block;
+        color: black;
+        padding: 40px ;
+        margin: 30px;
+      }
+      .cards{
+        height:100px;
+        width: 100%;
+        display: inline-block;
+      }
+      /* .card1{
+    
+        /* height: 400px;
+        width: 40%;
+        padding: 10%;
+        display: inline-block;
+        color: white; */
+        */
+      .blue{
+        height:500px;
+        width: 100%;
+        background-color: blue;
+        display: inline-block;
+      }
+      .blue1{
+        height: 800px;
+        width: 30%;
+        padding:150px;
+        margin: 10px;
+        display: inline-block;
+        color:white;
+      background-image: url(./01.jpg);
+      background-repeat: no-repeat;
+      
+      }
+        .blue2{
+        height: 800px;
+        width: 30%;
+        padding:150px;
+        margin: 10px;
+        display: inline-block;
+        color:white;
+        background-image: url(./02.jpg);
+        background-repeat: no-repeat;
+      }
+      .blue3{
+        height: 800px;
+        width: 30%;
+        padding:150px;
+        margin: 10px;
+        display: inline-block;
+        color:white;
+      background-image: url(./03.jpg);
+      background-repeat: no-repeat;
+      }
+        
+      .client{
+            height: 80px;
+            width: 100%;
+            margin: 20px;
+            padding: 50px;
+            background-color: blueviolet;
+            
+      }
+      .constructor{
+            height: 300px;
+            width: 50%;
+            background-color:antiquewhite;
+            padding-top: 20px;
+            margin: 20px;
+      }
+      .stickers{
+        height:50px;
+        width: 100%;
+        display: inline-block;
+        margin: 130px;
+
+      }
+      .sticker{
+        height: 40px ;
+        width: 20% ;
+        padding: 10px;
+        margin: 20px;
+        display: inline-block;
+      }
+      .pink{
+        height: 400px;
+        width: 100%;
+        display:inline-block;
+        background-color: orange;
+      
+      }
+      .news{
+        height: 350px;
+        width: 30%;
+        /* padding: 10px;
+        margin: 10px; */
+        display: inline-block;
+      }
+      .new{
+        height: 350px;
+        width: 20%;
+        background-image: "https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/Group-10-copy-3.png";
+        display: inline-block;
+      }
+      .contactus{
+        height: 100px;
+        width:100% ;
+      margin: 100px;
+      }
+      .cardsu{
+        height: 200px;
+        width: 100%;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+      }
+      .cardu{
+        height: 180px;
+        width: 30%;
+        display: inline-block;
+        padding: 20px;
+        margin: 20px;
+      }
+      .gettouch{
+        height: 100px;
+        width: 100%;
+        padding: 200px;
+      }
+      .black{
+        height: 500px;
+        width: 100%;
+        display: inline-block;
+        /* padding: 10px; */
+        background-color: black;
+      }
+      .blacks{
+        height: 400px;
+        width: 15px;
+        padding: 5%;
+        margin: 5%;
+        display: inline-block;
+        color: white;
+      }
+      .logo{
+        height: 10px;
+        width: 20%;
+        display: inline-block;
+        margin: 10px;
+      }
+      /* .blackimage{
+        height: 20px;
+        width: 20%;
+        /* padding: 10px;
+        width: 10px; */
+      { display: inline-block;
+      } */
+     .saved{
+      height: 300px;
+      width: 100%;
+      display: inline-block;
+      margin-top: 60px;
+     }
+     .saved1{
+      height: 250px;
+      width: 40%;
+      display: inline-block;
+     }
+      .saved2{
+      height: 250px;
+      width: 40%;
+      display: inline-block;
+      margin-top: 30px;
+     }
+     @media screen and (min-width:0px) and (max-width:360px){ 
+      .creative{
+        display: flex;
+        flex-direction: column;
+      }
+     }
+       @media screen and (min-width:768px) and (max-width:1023px){
+      .creative{
+        display: flex;
+        flex-direction: row-reverse;}
+      }
+      @media screen and (min-width:0px) and (max-width:360px){ 
+      .elements{
+        display: flex;
+        flex-direction: column;
+      }
+     }
+       @media screen and (min-width:768px) and (max-width:1023px){
+      .elements{
+        display: flex;
+        flex-direction: row-reverse;}
+      }
+      @media screen and (min-width:0px) and (max-width:360px){ 
+      .achievements{
+        display: flex;
+        flex-direction: column;
+      }
+     }
+       @media screen and (min-width:768px) and (max-width:1023px){
+      .achievements{
+        display: flex;
+        flex-direction: row-reverse;}
+      }
+      @media screen and (min-width:0px) and (max-width:360px){ 
+      .credit{
+        display: flex;
+        flex-direction: column;
+      }
+     }
+       @media screen and (min-width:768px) and (max-width:1023px){
+      .credit{
+        display: flex;
+        flex-direction: row-reverse;}
+      }
+      @media screen and (min-width:0px) and (max-width:360px){ 
+      .main{
+        display: flex;
+        flex-direction: column;
+      }
+     }
+       @media screen and (min-width:768px) and (max-width:1023px){
+      .main{
+        display: flex;
+        flex-direction: row-reverse;}
+      }
+      @media screen and (min-width:0px) and (max-width:360px){ 
+      .imag{
+        display: flex;
+        flex-direction: column;
+      }
+     }
+       @media screen and (min-width:768px) and (max-width:1023px){
+      .imag{
+        display: flex;
+        flex-direction: row-reverse;}
+      }
+      @media screen and (min-width:0px) and (max-width:360px){ 
+      .saved{
+        display: flex;
+        flex-direction: column;
+      }
+     }
+       @media screen and (min-width:768px) and (max-width:1023px){
+      .saved{
+        display: flex;
+        flex-direction: row-reverse;}
+      }
+      @media screen and (min-width:0px) and (max-width:360px){ 
+      .service{
+        display: flex;
+        flex-direction: column;
+      }
+     }
+       @media screen and (min-width:768px) and (max-width:1023px){
+      .service{
+        display: flex;
+        flex-direction: row-reverse;}
+      }
+      @media screen and (min-width:0px) and (max-width:360px){ 
+      .credits{
+        display: flex;
+        flex-direction: column;
+      }
+     }
+       @media screen and (min-width:768px) and (max-width:1023px){
+      .credits{
+        display: flex;
+        flex-direction: row-reverse;}
+      }
+      @media screen and (min-width:0px) and (max-width:360px){ 
+      .blue{
+        display: flex;
+        flex-direction: column;
+      }
+     }
+       @media screen and (min-width:768px) and (max-width:1023px){
+      .blue{
+        display: flex;
+        flex-direction: row-reverse;}
+      }
+      @media screen and (min-width:0px) and (max-width:360px){ 
+      .clients{
+        display: flex;
+        flex-direction: column;
+      }
+     }
+       @media screen and (min-width:768px) and (max-width:1023px){
+      .clients{
+        display: flex;
+        flex-direction: row-reverse;}
+      }
+      @media screen and (min-width:0px) and (max-width:360px){ 
+      .stickers{
+        display: flex;
+        flex-direction: column;
+      }
+     }
+       @media screen and (min-width:768px) and (max-width:1023px){
+      .stickers{
+        display: flex;
+        flex-direction: row-reverse;}
+      }
+    </style>
 </head>
-<style>
-   *{
-            padding: 0px;
-            margin: 0px;
-            box-sizing: border-box;
-   }
-  .main{
-    display: inline-block;
-    height: 70px;
-    width: 100%;
-    background-color: bisque;
-    padding: 20px;
-    margin: 20px;
-   }
-  .jevilen{
-    height: 30px;
-    width: 100%;
-    display: inline-block;
-    padding: 30px;
-    margin: 20px;
-  }
-  .ca{
-    background-color: blueviolet;
-    display: inline-block;
-  }
-  .home{
-    display: inline-block;
-  }
-</style>
 <body>
-  <div class="main">
-    <h1 class="jevilen">jevelin <span class="ca">ca</span> </h1>
+  <div class="project1">
+    <nav class="navbar navbar-expand-lg bg-info Sticky-top" id="home">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">jevelin <span class="ca">ca</span><img src="" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#service">service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#projects">projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#partners">partners</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#contacts">contacts</a>
+        </li>
+    </div>
   </div>
-  <img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/Group-10-copy-3.png" alt="">
+</nav>
+<div class="creative">
+  <div class="agency">
+  <h1 id="home">CREATIVE</h1>
+  <h1>AGENCY</h1>
+  </div>
+  <div class="image">
+  <img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/Group-10-copy-3.png" alt="" width="800vw" height="600vh">
+  </div>
+</div>
+<div class="elements">
+      <div class="service" id="service">
+          <h1>SERVICE</h1>
+          <H1>&PORTPOLIO</H1>
+      </div>
+          <div class="main">
+              <h2>BRAND IDENTITY</h2>
+              <p>There live the blind texts. Separated they live in Bookmarksgrove right</h5></p>
+          </div>
+          <div class="main">
+              <h2>MARKETING</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia</h5></p>
+          </div>
+          <div class="main">
+                <h2>STRATGY</h2>
+                <P>A small river named Duden flows by their place and supplies it with the necessary</P>
+
+          </div>
+          <div class="main">
+                <h2>web design</h2>
+                <p>It is a paradisematic country, in which roasted parts of sentences</p>
+          </div>
+          <div class="main">
+                <h2>UI & UX</h2>
+                <p>Fly into your mouth even the all-powerful Pointing on that</p>
+          </div>
+          <div class="main">
+                <h2>GRAPHIC DESIGN</h2>
+                <p>Has no control about the blind texts it is an almost unorthographic life</p>
+          </div>
+        <center>  <div class="imag" id="projects">
+          <a href="https://jevelin.shufflehound.com/creative-agency/project/oranging-branding/"><img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/portfolio9-1.jpg" alt="" width="500px" height="400px"></a>
+
+          </div>
+          <div class="imag">
+            <a href="https://jevelin.shufflehound.com/creative-agency/project/modern-essentials-apparel/"><img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/portfolio10-1.jpg" alt="" width="500px" height="400px" ></a>
+          </div>
+          <div class="imag">
+            <a href="https://jevelin.shufflehound.com/creative-agency/project/jevelin-festival/"><img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/portfolio7-1.jpg" alt="" width="500px" height="400px"></a>
+          </div>
+          <div class="imag">
+            <a href="https://jevelin.shufflehound.com/creative-agency/project/coffee-cup/"><img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/portfolio1-1.jpg" alt="" width="500px" ></a>
+          </div>
+          <div class="imag">
+            <a href="https://jevelin.shufflehound.com/creative-agency/project/post-office/"><img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/portfolio5.jpg" alt="" width="500px" ></a>
+          </div>
+          <div class="imag">
+            <a href="https://jevelin.shufflehound.com/creative-agency/project/the-notebook-project/"><img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/portfolio11-1.jpg" alt="" width="500px"></a>
+          </div>
+          <div class="imag">
+            <a href="https://jevelin.shufflehound.com/creative-agency/project/iconic-magazine/"><img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/portfolio3-1-1024x797.jpg" alt="" width="500px"></a>
+          </div>
+          <div class="imag">
+            <a href="https://jevelin.shufflehound.com/creative-agency/project/marble-visual-identity/"><img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/Open-Face-Motorcycle-Helmet-Mockup.jpg" alt=""height="400px" width="500px"></a>
+          </div>
+          <div class="imag">
+            <a href="https://jevelin.shufflehound.com/creative-agency/project/print-house/"><img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/portfolio6-1.jpg" alt="" width="500px"></a>
+          </div>
+        </center>           <!-- <form action="" class="but">
+          <button type="button">view all projects</button>
+        </form> -->
+</div>
+<div class="blak">
+        <!-- <form action="" class="but">
+          <button type="button">view all projects</button>
+        </form> -->
+        
+    
+</div>
+<div class="achievements">
+          <h1>ACHIEVEMENTS</h1><br><br>
+</div>
+<div class="proud">
+    <div class="achievements">
+          <p>we are proud of</p>
+</div>
+</div>
+<center>
+<div class="credit">
+  <div class="credits">
+    <h1>18</h1><br>
+    <p>awwwards</p><br>
+    <p>winnings</p>
+  </div>
+  <div class="credits">
+    <h1>24</h1>
+    <p>adweek</p>
+    <p>reviews</p>
+  </div>
+  <div class="credits">
+    <h1>7</h1>
+    <p>The weekly</p>
+    <p>awards</p>
+  </div>
+  <div class="credits">
+    <h1>12</h1>
+    <p>ommo</p>
+    <p>winnings</p>
+  </div>
+  <div class="credits">
+    <h1>4</h1>
+    <p>desigh pick</p>
+    <p>reviews</p>
+  </div>
+</div>
+</center>
+
+<center>
+<div class="saved">
+  <div class="saved1">
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="ma.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h1 class="card-title">MASTER</h1>
+        <H1>CREW</H1>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="saved1">
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://th.bing.com/th/id/OIP.L12A9cgd7dCHFZFd8BTPKwHaHZ?rs=1&pid=ImgDetMain" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Designer</h5>
+        <h5 style="color: green;">Web designer</h5>
+        <p class="card-text">If you are enthusiastic person with a pinch of talent don’t hesitate to join our team</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="saved1">
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./lady.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">KATE WILSON</h5>
+        <h5 style="color: green;">Advertising</h5>
+        <p class="card-text">Highly experienced professional that is going to make amazing things for you</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="saved1">
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://th.bing.com/th/id/OIP.0sCmTt5y8LLQOxz6JBFyuwHaJ2?rs=1&pid=ImgDetMain" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">JOHN BROWN</h5>
+        <h5 style="color: green;">developer</h5>
+        <p class="card-text">Highly experienced professional that is going to make amazing things for you</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div></center>
+
+    
+</div>
+<center>
+<div class="blue">
+      <div class="blue1">
+          <h1>Project
+Visualisation</h1>
+            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from</p>
+      </div>
+      <div class="blue2">
+          <h1>Creation
+& Selection</h1>
+      <p>One day however a small line of blind text by the name of Lorem Ipsum</p>
+      </div>
+      <div class="blue3">
+            <h1>Lounching
+Campaign</h1>
+        <p>She packed her seven versalia, put her initial into the belt and made herself on the way</p>
+      </div>
+</div>
+</center>
+<div class="clients">
+<center><h1 id="partners">OUR CLIENTS</h1>
+<H3>& patners</H3></center>
+</div>
+<center><div class="constructor">
+      <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <h1>jevilein</h1>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h3 class="card-title" style="background-color: green;" >JEVELIN CONSTRUCTOR</h3>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<DIV>
+    <h3>And grow familiar with count less in discridable forms of the insets and files,then i feel the presence of the almighty who formed us inhis own image and the breath</h3>
+</DIV>
+</div></center>
+<marquee><div class="stickers" id="contacts">
+      <div class="sticker"><img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/logo1.png" alt="">
+      </div>
+      <div class="sticker"><img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/dealine-logo-6.png" alt="">
+      </div>
+      <div class="sticker"><img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/Vector-Smart-Object.png" alt="">
+      </div>
+      <div class="sticker"><img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/dealine-logo-7.png" alt="">
+      </div>
+</div></style></marquee>
+<center>
+<div class="pink">
+    <div class="news">
+      <h1 style="margin-bottom: 100px;">SUBSCRIBE TO NEWS LETTER</h1>
+    </div>
+    <div class="new">
+      <img src="https://jevelin.shufflehound.com/creative-agency/wp-content/uploads/sites/24/2018/09/Group-10-copy-3.png" alt="" width="400px">
+      <input type="email" placeholder="enter your email" required>
+      <button>submit</button>
+    </div>
+</div></center>
+<center><div class="contactus">
+      <h1>CONTACT US</h1>
+      <H3>& let us help you</H3>
+</div></center>
+<div class="cardsu">
+<div class="cardu">
+  <div class="card" style="width: 18rem;">
+  <img src="https://thumbs.dreamstime.com/z/support-icon-trendy-logo-concept-white-background-fr-delivery-logistics-collection-suitable-use-web-apps-mobile-131189987.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+   <center><h5 class="card-title">Support</h5>
+    <p class="card-text">Just let us know if you have any questions regarding our services</p></center> 
+  </div>
+</div>
+</div>
+<div class="cardu">
+  <div class="card" style="width: 18rem;">
+  <img src="https://th.bing.com/th/id/OIP.WjjJU6U8vSJ0a6aN04Y03wHaEn?rs=1&pid=ImgDetMain" class="card-img-top" alt="..." height="300px">
+  <div class="card-body">
+    <center><h5 class="card-title"> >Printing & Lettering</h5>
+    <p class="card-text">We can tell you all about our technques and other specifics</p></center>
+    
+  </div>
+</div>
+</div>
+<div class="cardu">
+  <div class="card" style="width: 18rem;">
+  <img src="https://th.bing.com/th/id/OIP.Dy9h0v6ixjcJC3cAg9BIaAHaHh?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+  <div class="card-body">
+    <center><h5 class="card-title">Media & Marketing</h5>
+    <p class="card-text">Just let us know if you have any questions regarding our services</p></center>
+    
+    </div>
+</div>
+</div>
+</div>
+<div class="gettouch">
+  <center><button style="background-color: orange;">get in touch</button></center>
+</div>
+<div class="black">
+      <div class="blacks">
+        <h1 style="color:green;">FOLLOW US</h1>
+        <P>#jevilin creative</P>
+            </div>
+      <div class="blacks">
+          <h3 style="color:green;">OFFICE</h3>
+          <P>Office San Diego — 845 15th Street</P>
+      </div>
+      <div class="blacks">
+            <h3 style="color:green;">START CONVERSATION</h3>
+            <P>
+hi@creativeagency.com +1.858.755.6922</P>
+      </div>
+      <div class="blacks">
+        <h3 style="color:green;">SOCIAL</h3>
+        <div class="logo"><img src="https://logos-world.net/wp-content/uploads/2020/04/Instagram-icon-Logo-2016-present.png" alt="" height="20px" width="20px">
+        </div>
+        <div class="logo"><img src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png" alt="" height="20px" width="20px">
+        </div>
+        <div class="logo"><img src="https://static.vecteezy.com/system/resources/previews/013/901/773/original/facebook-icon-ios-facebook-social-media-logo-on-white-background-free-free-vector.jpg" alt="" height="20px" width="20px">
+        </div>
+        <div class="logo"><img src="https://1000logos.net/wp-content/uploads/2017/05/New-YouTube-logo.jpg" alt="" height="20px" width="20px">
+        </div>
+
+      </div>
+            <CEnter><h1>THANK YOU</h1></CEnter>
+      </div> 
+
+
 </body>
 </html>
